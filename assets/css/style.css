@@ -355,7 +355,7 @@ B. Helpers
 }
 
 .opacity-0 {
-    opacity: ;
+    opacity: .01;
 }
 
 /***********************************************************************************************************************
@@ -906,6 +906,38 @@ form .status i {
     z-index: 1;
 }
 
+.bomb {
+    position: absolute;
+    user-select: none;
+    pointer-events: none;
+    font-size: 24px;
+    animation: fall 4s linear forwards; /* Increased duration to 4s and added forwards to retain final state */
+    opacity: 1;
+}
+
+@keyframes fall {
+    0% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+    30% {
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(calc(100vh - 100%));
+        opacity: 0;
+    }
+}
+
+
+#sea {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    overflow: hidden; /* Hides the overflowed part of the emojis */
+    height: 100px; /* Fixed height for the sea */
+}
 @media screen and (min-width: 48rem) {
     .modal:before {
         display: inline-block;
@@ -914,3 +946,5 @@ form .status i {
         height: 100%;
     }
 }
+
+
