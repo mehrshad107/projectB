@@ -1,15 +1,4 @@
 /*----------------------------------------------------------------------------------------------------------------------
-Project:	    CreaSoon
-Version:        1.0.0
-
-Default Color   #000;
-
-Body copy:		'Monsterat', sans-serif; 14px;
-Headers:		'Monsterat', sans-serif;
-
-----------------------------------------------------------------------------------------------------------------------*/
-
-/*----------------------------------------------------------------------------------------------------------------------
 [Table of contents]
 
 A. Basic Styling
@@ -43,7 +32,8 @@ C. Components
 A. Basic Styling
 ***********************************************************************************************************************/
 
-body, html {
+body,
+html {
     height: 100%;
     font-family: 'Montserrat', sans-serif;
     font-size: 1rem;
@@ -51,6 +41,7 @@ body, html {
     position: relative;
     margin-right: 0 !important;
     margin: 0;
+    background-color: #f3f3f3;
 }
 
 a {
@@ -59,7 +50,9 @@ a {
     color: #000;
 }
 
-a:hover, a:focus, a:active {
+a:hover,
+a:focus,
+a:active {
     text-decoration: none;
 }
 
@@ -124,7 +117,8 @@ B. Helpers
     transform: scale(1);
 }
 
-.background-wrapper, .active-slider {
+.background-wrapper,
+.active-slider {
     position: absolute;
     top: 0;
     left: 0;
@@ -134,16 +128,19 @@ B. Helpers
     overflow: hidden;
 }
 
-.background-wrapper img, .active-slider img {
+.background-wrapper img,
+.active-slider img {
     width: 100%;
     height: auto;
 }
 
-.background-wrapper .map, .active-slider .map {
+.background-wrapper .map,
+.active-slider .map {
     height: 100%;
 }
 
-.background-wrapper .background-color, .active-slider .background-color {
+.background-wrapper .background-color,
+.active-slider .background-color {
     position: absolute;
     top: 0;
     left: 0;
@@ -410,6 +407,11 @@ C. Components
     pointer-events: auto;
     margin-top: 1.875rem;
     margin-bottom: 1.25rem;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    gap: 10px;
 }
 
 .content-wrapper .content-main .container {
@@ -483,9 +485,15 @@ footer .social-icons a:hover {
     opacity: 1;
 }
 
-input[type="text"], input[type="email"], input[type="date"], input[type="time"],
-input[type="search"], input[type="password"], input[type="number"],
-input[type="tel"], textarea.form-control {
+input[type="text"],
+input[type="email"],
+input[type="date"],
+input[type="time"],
+input[type="search"],
+input[type="password"],
+input[type="number"],
+input[type="tel"],
+textarea.form-control {
     border-radius: 0;
     transition: .3s;
     box-shadow: none;
@@ -501,24 +509,41 @@ input[type="tel"], textarea.form-control {
     width: 100%;
     height: inherit;
     font-size: .875rem;
+    border-radius: 12px;
 }
 
-input[type="text"]:active, input[type="text"]:focus, input[type="email"]:active,
-input[type="email"]:focus, input[type="date"]:active, input[type="date"]:focus,
-input[type="time"]:active, input[type="time"]:focus, input[type="search"]:active,
-input[type="search"]:focus, input[type="password"]:active,
-input[type="password"]:focus, input[type="number"]:active,
-input[type="number"]:focus, input[type="tel"]:active, input[type="tel"]:focus,
-textarea.form-control:active, textarea.form-control:focus {
+input[type="text"]:active,
+input[type="text"]:focus,
+input[type="email"]:active,
+input[type="email"]:focus,
+input[type="date"]:active,
+input[type="date"]:focus,
+input[type="time"]:active,
+input[type="time"]:focus,
+input[type="search"]:active,
+input[type="search"]:focus,
+input[type="password"]:active,
+input[type="password"]:focus,
+input[type="number"]:active,
+input[type="number"]:focus,
+input[type="tel"]:active,
+input[type="tel"]:focus,
+textarea.form-control:active,
+textarea.form-control:focus {
     box-shadow: none;
     background-color: rgba(0, 0, 0, .06);
     border-color: #fff;
 }
 
-input[type="text"]:hover, input[type="email"]:hover, input[type="date"]:hover,
-input[type="time"]:hover, input[type="search"]:hover,
-input[type="password"]:hover, input[type="number"]:hover,
-input[type="tel"]:hover, textarea.form-control:hover {
+input[type="text"]:hover,
+input[type="email"]:hover,
+input[type="date"]:hover,
+input[type="time"]:hover,
+input[type="search"]:hover,
+input[type="password"]:hover,
+input[type="number"]:hover,
+input[type="tel"]:hover,
+textarea.form-control:hover {
     box-shadow: none;
     background-color: rgba(0, 0, 0, .06);
 }
@@ -533,7 +558,8 @@ form.submitted .status {
     transform: scale(1);
 }
 
-form.submitted .form-group, form.submitted .input-group {
+form.submitted .form-group,
+form.submitted .input-group {
     pointer-events: none;
 }
 
@@ -589,6 +615,7 @@ form .status i {
     border-radius: 3.125rem;
     width: 100%;
     overflow: hidden;
+
 }
 
 .input-group .input-group-btn {
@@ -615,10 +642,14 @@ form .status i {
     background-color: rgba(0, 0, 0, .03);
 }
 
-.input-group input[type="text"], .input-group input[type="email"],
-.input-group input[type="date"], .input-group input[type="time"],
-.input-group input[type="search"], .input-group input[type="password"],
-.input-group input[type="number"], .input-group input[type="tel"],
+.input-group button[type="text"],
+.input-group button[type="email"],
+.input-group button[type="date"],
+.input-group button[type="time"],
+.input-group button[type="search"],
+.input-group button[type="password"],
+.input-group button[type="number"],
+.input-group button[type="tel"],
 .input-group textarea.form-control {
     border-radius: 0;
     transition: .3s;
@@ -637,28 +668,37 @@ form .status i {
     font-size: 1.125rem;
 }
 
-.input-group input[type="text"]:active, .input-group input[type="text"]:focus,
-.input-group input[type="email"]:active, .input-group input[type="email"]:focus,
-.input-group input[type="date"]:active, .input-group input[type="date"]:focus,
-.input-group input[type="time"]:active, .input-group input[type="time"]:focus,
-.input-group input[type="search"]:active,
-.input-group input[type="search"]:focus,
-.input-group input[type="password"]:active,
-.input-group input[type="password"]:focus,
-.input-group input[type="number"]:active,
-.input-group input[type="number"]:focus, .input-group input[type="tel"]:active,
-.input-group input[type="tel"]:focus, .input-group textarea.form-control:active,
+.input-group button[type="text"]:active,
+.input-group button[type="text"]:focus,
+.input-group button[type="email"]:active,
+.input-group button[type="email"]:focus,
+.input-group button[type="date"]:active,
+.input-group button[type="date"]:focus,
+.input-group button[type="time"]:active,
+.input-group button[type="time"]:focus,
+.input-group button[type="search"]:active,
+.input-group button[type="search"]:focus,
+.input-group button[type="password"]:active,
+.input-group button[type="password"]:focus,
+.input-group button[type="number"]:active,
+.input-group button[type="number"]:focus,
+.input-group button[type="tel"]:active,
+.input-group button[type="tel"]:focus,
+.input-group textarea.form-control:active,
 .input-group textarea.form-control:focus {
     box-shadow: none;
     background-color: #fff;
     border-color: #fff;
 }
 
-.input-group input[type="text"]:hover, .input-group input[type="email"]:hover,
-.input-group input[type="date"]:hover, .input-group input[type="time"]:hover,
-.input-group input[type="search"]:hover,
-.input-group input[type="password"]:hover,
-.input-group input[type="number"]:hover, .input-group input[type="tel"]:hover,
+.input-group button[type="text"]:hover,
+.input-group button[type="email"]:hover,
+.input-group button[type="date"]:hover,
+.input-group button[type="time"]:hover,
+.input-group button[type="search"]:hover,
+.input-group button[type="password"]:hover,
+.input-group button[type="number"]:hover,
+.input-group button[type="tel"]:hover,
 .input-group textarea.form-control:hover {
     box-shadow: none;
     background-color: #fff;
@@ -667,6 +707,71 @@ form .status i {
 .form-group .btn {
     padding-top: .875rem;
     padding-bottom: .875rem;
+    border-radius: 12px;
+}
+
+.bold {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.custom-btn {
+    padding: 2rem 11rem;
+    border: none;
+    background-color: #f9f9f9;
+    color: #fff;
+    font-size: 1rem;
+    cursor: pointer;
+    outline: none;
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
+    border-radius: 4px;
+    /* Optional for rounded corners */
+}
+
+.frame {
+    width: 100%;
+    text-align: center;
+}
+
+button {
+    margin: 20px;
+}
+
+.btn-16 {
+    border: none;
+    color: #000;
+    width: 100%;
+    border-radius: 22px;
+}
+
+.btn-16:before {
+    transition: box-shadow 0.6s ease;
+    /* Smooth transition for shadow */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.btn-16:hover {
+    transform: translateY(-4px);
+    /* Slightly raise the button */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.btn-16:active {
+    transform: translateY(2px);
+    /* Push the button down */
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.btn-16:focus {
+    box-shadow: 0 0 0 3px rgb(100, 73, 117);
+    /* A glow effect for focus */
+}
+
+.btn-16:disabled {
+    background-color: #ccc;
+    box-shadow: none;
+    cursor: not-allowed;
 }
 
 /* -- Header */
@@ -745,7 +850,7 @@ form .status i {
 }
 
 .modal-dialog .modal-content {
-    border-radius: 0;
+    border-radius: 12px;
     border: none;
 }
 
@@ -762,6 +867,9 @@ form .status i {
 .modal-dialog .modal-content .modal-header {
     border-bottom: none;
     padding: 4.0625rem 2.8125rem;
+    border-top-right-radius: 12px;
+    border-top-left-radius: 12px;
+
 }
 
 .modal-dialog .modal-content .modal-header .close {
@@ -771,7 +879,8 @@ form .status i {
     position: absolute;
     top: 0;
     right: 0;
-    margin-top: 0;
+    margin-top: 10px;
+    border-radius: 12px;
 }
 
 .modal-dialog .modal-content .modal-body {
@@ -846,7 +955,8 @@ form .status i {
     position: relative;
 }
 
-.skill .bar .bar-active, .skill .bar .bar-background {
+.skill .bar .bar-active,
+.skill .bar .bar-background {
     height: .125rem;
     background-color: #000;
     position: absolute;
@@ -906,38 +1016,30 @@ form .status i {
     z-index: 1;
 }
 
+@keyframes appear {
+    0% {
+        opacity: 0;
+        transform: scale(0);
+    }
+
+    50% {
+        opacity: 1;
+        transform: scale(1.5);
+    }
+
+    100% {
+        opacity: 0;
+        transform: scale(1);
+    }
+}
+
 .bomb {
     position: absolute;
+    font-size: 2em;
+    animation: appear 4s infinite ease-in-out;
     user-select: none;
-    pointer-events: none;
-    font-size: 24px;
-    animation: fall 4s linear forwards; /* Increased duration to 4s and added forwards to retain final state */
-    opacity: 1;
 }
 
-@keyframes fall {
-    0% {
-        transform: translateY(0);
-        opacity: 1;
-    }
-    30% {
-        opacity: 0;
-    }
-    100% {
-        transform: translateY(calc(100vh - 100%));
-        opacity: 0;
-    }
-}
-
-
-#sea {
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-    text-align: center;
-    overflow: hidden; /* Hides the overflowed part of the emojis */
-    height: 100px; /* Fixed height for the sea */
-}
 @media screen and (min-width: 48rem) {
     .modal:before {
         display: inline-block;
@@ -946,5 +1048,3 @@ form .status i {
         height: 100%;
     }
 }
-
-
