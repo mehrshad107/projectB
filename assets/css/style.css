@@ -35,13 +35,14 @@ A. Basic Styling
 body,
 html {
     height: 100%;
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Yekan_bakh';
     font-size: 1rem;
     overflow: hidden;
     position: relative;
     margin-right: 0 !important;
     margin: 0;
     background-color: #f3f3f3;
+    
 }
 
 a {
@@ -844,9 +845,10 @@ button {
 .modal-dialog {
     width: auto;
     display: inline-block;
-    text-align: left;
+    text-align: right;
     vertical-align: middle;
     max-width: 100%;
+    direction: rtl;
 }
 
 .modal-dialog .modal-content {
