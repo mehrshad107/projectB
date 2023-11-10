@@ -713,7 +713,7 @@ form .status i {
 }
 
 .bold {
-    font-size: 30px;
+    font-size: 22px;
     font-weight: bold;
 }
 
@@ -916,7 +916,11 @@ button {
 }
 
 /* -- Person */
-
+.txt{
+    font-size: 22px;
+    text-align: center;
+    white-space: nowrap;
+}
 .person h4 {
     margin-bottom: .3125rem;
 }
