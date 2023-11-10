@@ -934,6 +934,12 @@ button {
     display: inline-block;
 }
 
+.deas{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
 /* -- Skill */
 
 .skill {
