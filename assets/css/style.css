@@ -60,6 +60,7 @@ a:active {
 a.icon i {
     margin-right: .375rem;
     margin-left: .375rem;
+    
 }
 
 dl dt {
@@ -834,6 +835,7 @@ button {
     text-align: center;
 }
 
+
 .modal.fade .modal-dialog {
     transform: translate(0, 0) scale(.95);
 }
@@ -862,7 +864,7 @@ button {
 }
 
 .modal-dialog .modal-content h3 {
-    font-size: 1.5rem;
+    font-size: 1.5 rem;
     margin-bottom: 1.875rem;
 }
 
