@@ -1044,6 +1044,11 @@ form .status i {
     }
 }
 
+.img-div{
+    display: flex;
+    justify-content: center;
+}
+
 .bomb {
     position: absolute;
     font-size: 2em;
