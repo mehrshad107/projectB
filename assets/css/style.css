@@ -1139,11 +1139,7 @@ form .status i {
     body {
         font-size: 14px;
     }
-
-    h1 {
-        font-size: 3.625rem;
-    }
-
+    
     h2 {
         font-size: 22px;
     }
@@ -1186,10 +1182,6 @@ form .status i {
     /* Global */
     body {
         font-size: 14px;
-    }
-
-    h1 {
-        font-size: 3.625rem;
     }
 
     h2 {
